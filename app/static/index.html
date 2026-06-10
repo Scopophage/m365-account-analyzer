@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M365 Account Analyzer</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>M365 Account Analyzer</h1>
+      <p>Analyse tenant-only Microsoft 365 / Entra ID par UPN, mail, alias, nom ou samAccountName synchronise.</p>
+    </div>
+    <button id="healthBtn" class="secondary">Tester la configuration</button>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Recherche simple</h2>
+      <div class="search-row">
+        <input id="identifierInput" type="text" placeholder="ex : compte.space@adventiel.fr ou Infogerance ADVENTIEL" autocomplete="off" />
+        <button id="searchBtn">Analyser</button>
+        <button id="exportAccountPdfBtn" class="secondary" disabled>Exporter PDF fiche</button>
+      </div>
+      <p class="hint">Tu peux saisir un UPN, une adresse mail, un alias/proxyAddress, un id objet Entra, un samAccountName synchronise ou un nom affiche.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Analyse en lot</h2>
+      <p class="hint">Colle une liste d'identifiants, un par ligne, ou importe un CSV avec une colonne UPN / Identifiant (UPN) / Adresse Email / Nom complet.</p>
+      <textarea id="batchText" placeholder="Infogerance@adventiel.fr&#10;veeam.o365@adventiel.onmicrosoft.com&#10;mc-bot@adventiel.onmicrosoft.com"></textarea>
+      <div class="actions-row">
+        <button id="batchBtn" class="secondary">Analyser la liste collee</button>
+        <input id="csvFile" type="file" accept=".csv,.txt" />
+        <button id="csvBtn" class="secondary">Analyser le fichier</button>
+        <button id="exportBatchBtn" class="secondary" disabled>Exporter CSV</button>
+        <button id="exportExcelBtn" class="secondary" disabled>Exporter Excel</button>
+        <button id="exportBatchPdfBtn" class="secondary" disabled>Exporter PDF lot</button>
+      </div>
+    </section>
+
+    <section id="statusPanel" class="status-panel hidden"></section>
+    <section id="result" class="result hidden"></section>
+    <section id="batchResult" class="result hidden"></section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

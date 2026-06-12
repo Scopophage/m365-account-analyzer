@@ -195,7 +195,7 @@ L'API `GET /users/{id}/licenseDetails` est pratique en mode délégué, mais sa 
 
 Cette application utilise le flux client credentials : elle agit avec l'identité de l'application et non avec l'identité de l'utilisateur connecté.
 
-Pour une V1 locale admin, lance-la uniquement en local :
+Pour une V5 locale admin, lance-la uniquement en local :
 
 ```text
 127.0.0.1:8000

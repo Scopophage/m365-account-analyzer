@@ -153,7 +153,7 @@ http://127.0.0.1:8000
 Recherche simple :
 
 ```text
-service.account@contoso.com
+compte.space@adventiel.fr
 ```
 
 Analyse en lot : colle une liste avec un identifiant par ligne.
@@ -285,8 +285,8 @@ Mode test interactif :
 ```env
 ENABLE_EXCHANGE_ONLINE=true
 EXCHANGE_AUTH_MODE=interactive
-EXCHANGE_ADMIN_UPN=admin@contoso.com
-EXCHANGE_ORGANIZATION=contoso.onmicrosoft.com
+EXCHANGE_ADMIN_UPN=ton.admin@adventiel.fr
+EXCHANGE_ORGANIZATION=adventiel.onmicrosoft.com
 ```
 
 Mode recommandé app-only certificat :
@@ -300,7 +300,7 @@ Puis renseigner dans `.env` :
 ```env
 ENABLE_EXCHANGE_ONLINE=true
 EXCHANGE_AUTH_MODE=app_certificate
-EXCHANGE_ORGANIZATION=contoso.onmicrosoft.com
+EXCHANGE_ORGANIZATION=adventiel.onmicrosoft.com
 EXCHANGE_APP_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 EXCHANGE_CERTIFICATE_THUMBPRINT=THUMBPRINT_DU_CERTIFICAT
 EXCHANGE_INCLUDE_PERMISSIONS=true
@@ -330,4 +330,3 @@ Apres remplacement du projet ou ajout de la V5, lance :
 ```
 
 Puis force le rechargement du navigateur avec `CTRL + F5`.
-

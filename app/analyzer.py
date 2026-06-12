@@ -53,7 +53,7 @@ TECHNICAL_KEYWORDS = [
 LOW_VALUE_GROUP_NAMES = {
     "tous les utilisateurs",
     "all users",
-    "adventiel",
+    "contoso",
 }
 
 PRIVILEGED_ROLE_KEYWORDS = [
@@ -801,3 +801,4 @@ class AccountAnalyzer:
         if exchange_type:
             parts.append(f"Exchange: {exchange_type}")
         return " - ".join(parts)
+

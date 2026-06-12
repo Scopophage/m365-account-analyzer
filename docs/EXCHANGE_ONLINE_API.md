@@ -64,7 +64,7 @@ App registrations
 ```env
 ENABLE_EXCHANGE_ONLINE=true
 EXCHANGE_AUTH_MODE=app_certificate
-EXCHANGE_ORGANIZATION=adventiel.onmicrosoft.com
+EXCHANGE_ORGANIZATION=contoso.onmicrosoft.com
 EXCHANGE_APP_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 EXCHANGE_CERTIFICATE_THUMBPRINT=THUMBPRINT_DU_CERTIFICAT
 EXCHANGE_INCLUDE_PERMISSIONS=true
@@ -79,8 +79,8 @@ Pour tester sans certificat, tu peux utiliser :
 ```env
 ENABLE_EXCHANGE_ONLINE=true
 EXCHANGE_AUTH_MODE=interactive
-EXCHANGE_ADMIN_UPN=ton.admin@adventiel.fr
-EXCHANGE_ORGANIZATION=adventiel.onmicrosoft.com
+EXCHANGE_ADMIN_UPN=admin@contoso.com
+EXCHANGE_ORGANIZATION=contoso.onmicrosoft.com
 ```
 
 Ce mode peut ouvrir une fenêtre de connexion et n'est pas idéal pour l'analyse en lot.
@@ -108,3 +108,4 @@ Si ce test échoue, vérifie :
 - le certificat installé dans `Cert:\CurrentUser\My` ;
 - `Exchange.ManageAsApp` avec admin consent ;
 - le rôle Exchange attribué à l'application.
+

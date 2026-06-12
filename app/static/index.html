@@ -19,7 +19,7 @@
     <section class="panel">
       <h2>Recherche simple</h2>
       <div class="search-row">
-        <input id="identifierInput" type="text" placeholder="ex : compte.space@adventiel.fr ou Infogerance ADVENTIEL" autocomplete="off" />
+        <input id="identifierInput" type="text" placeholder="ex : service.account@contoso.com ou Support CONTOSO" autocomplete="off" />
         <button id="searchBtn">Analyser</button>
         <button id="exportAccountPdfBtn" class="secondary" disabled>Exporter PDF fiche</button>
       </div>
@@ -29,7 +29,7 @@
     <section class="panel">
       <h2>Analyse en lot</h2>
       <p class="hint">Colle une liste d'identifiants, un par ligne, ou importe un CSV avec une colonne UPN / Identifiant (UPN) / Adresse Email / Nom complet.</p>
-      <textarea id="batchText" placeholder="Infogerance@adventiel.fr&#10;veeam.o365@adventiel.onmicrosoft.com&#10;mc-bot@adventiel.onmicrosoft.com"></textarea>
+      <textarea id="batchText" placeholder="support@contoso.com&#10;backup.service@contoso.onmicrosoft.com&#10;automation.bot@contoso.onmicrosoft.com"></textarea>
       <div class="actions-row">
         <button id="batchBtn" class="secondary">Analyser la liste collee</button>
         <input id="csvFile" type="file" accept=".csv,.txt" />
@@ -48,3 +48,4 @@
   <script src="/static/app.js"></script>
 </body>
 </html>
+

@@ -123,7 +123,7 @@ class M365DataService:
                 warnings.append(f"Recherche avec filtre ignoree ({filter_expression}) : {exc}")
 
         # 4) Recherche approximative par nom affiche et UPN. Necessite ConsistencyLevel eventual.
-        # Utile pour saisir 'Infogerance ADVENTIEL' au lieu de l'UPN.
+        # Utile pour saisir 'Support CONTOSO' au lieu de l'UPN.
         search_value = identifier.replace('"', "").strip()
         if search_value:
             for search_expression in [
@@ -411,3 +411,4 @@ class M365DataService:
             "Ca peut etre normal si le compte n'a pas d'activite, si le compte n'est pas licence, ou si les rapports sont anonymises cote tenant."
         )
         return None, warnings
+

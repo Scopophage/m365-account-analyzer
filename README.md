@@ -2,7 +2,7 @@
 
 Application web locale pour analyser l'usage Microsoft 365 / Entra ID d'un compte utilisateur à partir d'un identifiant : UPN, adresse mail, id objet Entra ou `samAccountName` local synchronisé.
 
-Cette V1 est volontairement **tenant-only** : elle n'interroge pas directement l'Active Directory local, les contrôleurs de domaine ou les serveurs Windows.
+The application is tenant-focused and does not directly query on-premises Active Directory.
 
 ## Ce que l'application affiche
 

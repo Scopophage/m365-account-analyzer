@@ -245,12 +245,11 @@ Ajoute ou vérifie la permission `LicenseAssignment.Read.All`, puis relance l'ap
 
 ## Prochaines évolutions possibles
 
-- ajout d'une vraie authentification Entra ID pour les admins ;
-- historique des recherches et décisions ;
-- export Excel enrichi ;
-- connecteur Exchange Online PowerShell pour stats de boîte et délégations ;
-- connecteur d'audit Purview / Management Activity API ;
-- action contrôlée de désactivation après validation.
+- authentification Entra ID pour les admins
+- historique des recherches et décisions
+- analyse des Enterprise Applications / permissions API
+- audit Purview / Management Activity API
+- déploiement Docker / IIS
 
 ## V4 - Option Exchange Online live API
 
